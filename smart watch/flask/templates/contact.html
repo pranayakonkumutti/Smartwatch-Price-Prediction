@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Smart Watch Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style4.css')}}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home')}}">Home</a></li>
+                <li><a href="{{ url_for('brands')}}">Brands</a></li>
+                <li><a href="{{ url_for('about')}}">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, suggestions, or feedback, please feel free to contact us. We would love to hear from you!</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smart Watch Prediction. All rights reserved.</p>
+    </footer>
+</body>
+</html>
