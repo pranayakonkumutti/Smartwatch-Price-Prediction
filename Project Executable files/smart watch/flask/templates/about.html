@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Smart Watch Prediction</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1fd212;
+            padding: 10px 20px;
+        }
+        
+        .navbar .logo a {
+            color: rgb(6, 1, 1);
+            text-decoration: none;
+        
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        .navbar .right {
+            display: flex;
+        }
+        
+        .navbar .right a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition:0;
+        }
+        
+        .navbar .right a:hover {
+            background-color: #555;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('../static/images/img2.jpeg');
+            background-size: cover;
+            background-color: #f3f6f9;
+            color: #090909;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 80px;
+        }
+        .header {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .subheader {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+        }
+        .description {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+        </div>
+            <a href="{{ url_for('home')}}">Home</a>
+            <a href="{{ url_for('brands')}}">brands</a>
+            <a href="/about">about</a>
+            <a href="{{ url_for('contact')}}">contact</a>
+    </div>
+    <div class="container">
+        <div class="header">About Smart Watch Prediction</div>
+        <div class="subheader">Stay Ahead of Smart Watch Price Trends with Our Predictions</div>
+        <div class="description">
+            At Smart Watch Prediction, we provide you with the most accurate and up-to-date predictions for smart watch prices. Our advanced algorithms analyze market trends and provide you with the best times to buy or sell your smart watch. Stay informed and make smart purchasing decisions with our predictions.
+        </div>
+</body>
+</html>
